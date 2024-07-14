@@ -1,0 +1,134 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #4B0082;
+    color: white;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header img {
+    width: 150px;
+    margin-right: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    padding: 2em 0;
+}
+
+.add-product, .product-list {
+    background-color: white;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.add-product h2, .product-list h2 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+#producto-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#producto-form label {
+    margin: 0.5em 0 0.2em;
+    font-size: 0.9em;
+}
+
+#producto-form input, #producto-form button {
+    margin: 0.2em 0 0.5em;
+    padding: 0.7em;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#producto-form button {
+    cursor: pointer;
+    border: none;
+    background-color: #4B0082;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#producto-form button:hover {
+    background-color: #371062;
+}
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #4B0082;
+    color: white;
+    width: 150px;
+    padding: 0.5em;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+.product-card p {
+    margin: 0.5em 0;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em;
+    cursor: pointer;
+    margin-top: 0.5em;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+footer {
+    background-color: #4B0082;
+    color: white;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+}
